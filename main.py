@@ -12,6 +12,8 @@ def calculadora(num1: float, num2: float, operador: str) -> float:
         result = num1 + num2
     elif operador == '-':
         result = num1 - num2
+    elif operador == '*':
+        result = num1 * num2
 
 
     return result
