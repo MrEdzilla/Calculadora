@@ -31,7 +31,15 @@ if __name__ == "__main__":
         try:
             print('Calculadora')
             print('----------------------------------\n')
+            numero1: float = float(input('Introduza o primeiro número: '))
+            operacao: str = input('Introduza a operação a realizar (+ - / * ^): ').strip()
+            numero2: float = float(input('Introduza o segundo número: '))
 
+            print(f'O resultado: {calculadora(numero1, numero2, operacao)}')
+            print()
+            cont: str = input('Deseja continuar? (s/n): ').lower()
+            if cont == 'n':
+                break
 
         except ValueError:
             print('Dados inválidos! -> Tente novamente!')
