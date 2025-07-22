@@ -1,5 +1,6 @@
 import os
 import time
+import math
 
 def calculadora(num1: float, num2: float, operador: str) -> float:
     """
@@ -21,7 +22,6 @@ def calculadora(num1: float, num2: float, operador: str) -> float:
             raise ZeroDivisionError("Não é possível dividir por zero!")
 
     return result
-
 
 if __name__ == "__main__":
 
